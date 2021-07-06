@@ -1,0 +1,30 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false"  CodeBehind="Master.master.vb" Inherits="gerenciamentoClientes.Master" %>
+
+<!DOCTYPE html>
+
+<html class="h-100-p">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Styles/Site.css" rel="stylesheet" />
+    <link href="Styles/Form-Cliente.css" rel="stylesheet" />
+    <link href="Styles/List-Cliente.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="container-site h-100-p">
+    <div class="esp-cab">
+        <nav class="menu">
+          <a class="item-menu" runat="server" href="~/">Formulário</a>
+          <a class="item-menu" runat="server" href="Lista.aspx">Lista</a>
+        </nav>
+    </div>
+    <div class="esp-esq"></div>
+    <div class="esp-cen">
+        <asp:ContentPlaceHolder ID="ConteudoPrincipal" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="esp-dir"></div>
+</body>
+</html>
